@@ -1,1 +1,106 @@
-Test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man in the Mirror - Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            animation: fadeIn 2s ease-out;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 0 0 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: -webkit-linear-gradient(45deg, #4ca1af, #2c3e50);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 0 0 40px;
+            font-weight: 300;
+            line-height: 1.5em;
+        }
+
+        .cta-text {
+            padding: 15px 30px;
+            background-color: #ffffff;
+            color: #2c3e50;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            font-weight: 700;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .cta-text:hover {
+            background-color: #4ca1af;
+            color: #ffffff;
+        }
+
+        .graphic {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1;
+            z-index: -1;
+            width: 90%;
+            height: 90%;
+            background: url('abstract-feedback.svg') no-repeat center center;
+            background-size: contain;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Man in the Mirror</h1>
+        <p>Effortless, Rapid, Feedback <br> That Drives Personal & Professional Growth</p>
+        <a href="#" class="cta-text">Stay Tuned</a>
+        <div class="graphic"></div>
+    </div>
+</body>
+</html>
